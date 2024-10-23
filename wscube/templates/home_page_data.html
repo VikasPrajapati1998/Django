@@ -1,0 +1,82 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: skyblue;
+        }
+        .first {
+            box-sizing: border-box;
+            background-color: rgb(230, 230, 92);
+            border: 10px solid blue;
+            padding: 10px;
+            margin: 5px;
+            color: red;
+            font-weight: bold;
+        }
+        .second {
+            box-sizing: border-box;
+            background-color: rgb(102, 192, 102);
+            border: 10px solid red;
+            padding: 10px;
+            margin: 5px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="first">
+            <h1>{{welcome}}</h1>
+        </div>
+        <br>
+        <div class="second">
+            <h1>{{introduction}}</h1>
+        </div>
+        <br>
+        <div class="first">
+            <h1>This is the last line of this page.</h1>
+        </div>
+        <br>
+        <div class="second">
+            <h3>
+                {% for course in courseList %}
+                    {{forloop.counter}}. {{course}}
+                    <br>
+                {% endfor %}
+            </h3>
+        </div>
+        <br>
+        <div class="first">
+            Even: 
+            {% for n in numbers %}
+              {% if n|divisibleby:2 == True %}
+                {{ n }},
+              {% endif %}
+            {% endfor %}
+
+            <br>
+
+            Odd: 
+            {% for n in numbers %}
+              {% if n|divisibleby:2 == False %}
+                {{ n }},
+              {% endif %}
+            {% endfor %}
+
+        </div> 
+    </div>
+</body>
+</html>
+
+

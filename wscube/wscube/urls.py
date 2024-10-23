@@ -16,8 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from wscube import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.home),
+    path('aboutUs/', views.aboutUs),
+    path('course/<int:course_id>', views.course),
+    path('homePage/', views.homePage), 
+    path('homePageData/', views.homePageData),
 ]
 
