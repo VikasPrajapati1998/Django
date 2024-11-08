@@ -48,14 +48,3 @@ def homePage(request):
     return render (request, "index.html")
 
 
-# send data in html
-def homePageData(request):
-    data = {
-        'title': 'home page data', 
-        'welcome': "Welcome to the world of Django.",
-        'introduction': "Hello, Mr. Arjun Prajapati",
-        'courseList': ["C Programming", "Cpp Programming", "Java Programming", "Python Programming", "R Programming", "DSA"],
-        'numbers': [x for x in range(1, 21)],
-    }
-    return render(request, "home_page_data.html", data)
-
