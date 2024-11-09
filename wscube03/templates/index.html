@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artificial Intelligence & Deep Learning</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <header>
@@ -36,7 +37,7 @@
             of immense data sets and the application of solid mathematical methods. In 2012, deep learning proved to be a breakthrough technology, eclipsing all other methods. The transformer architecture 
             debuted in 2017 and was used to produce impressive generative AI applications. Investment in AI boomed in the 2020s.
         </p>
-        <img src="/static/images/history.jpg" alt="History of AI">
+        <img src="{% static 'images/history.jpg' %}" alt="History of AI">
     </section>
 
     <section id="present">
@@ -63,7 +64,7 @@
             unintended consequences and harms in the present and raised concerns about its risks and long-term effects in the future, prompting discussions about regulatory policies to ensure the safety 
             and benefits of the technology.
         </p>
-        <img src="/static/images/present.jpg" alt="Present of AI">
+        <img src="{% static 'images/present.jpg' %}" alt="Present of AI">
     </section>
 
     <section id="future">
@@ -81,7 +82,7 @@
             decided.<br>
             The concept of the future has been explored extensively in cultural production, including art movements and genres devoted entirely to its elucidation, such as the 20th-century movement futurism.
         </p>
-        <img src="/static/images/future.jpg" alt="Future of AI">
+        <img src="{% static 'images/future.jpg' %}" alt="Future of AI">
     </section>
 
     <section id="types">
@@ -100,7 +101,7 @@
                 object recognition tasks, leveraging principles from linear algebra, specifically matrix multiplication, to identify patterns within an image. That said, they can be computationally demanding, requiring 
                 graphical processing units (GPUs) to train models. <br>
             </p>
-            <img src="/static/images/cnn.jpg" alt="CNN Neural Network">
+            <img src="{% static 'images/cnn.jpg' %}" alt="CNN Neural Network">
         </div>
         <div class="network">
             <h3>Recurrent Neural Networks (RNN)</h3>
@@ -110,7 +111,7 @@
                 An RNN might be used to predict daily flood levels based on past daily flood, tide and meteorological data. But RNNs can also be used to solve ordinal or temporal problems such as language translation, natural 
                 language processing (NLP), sentiment analysis, speech recognition and image captioning.<br>
             </p>
-            <img src="/static/images/rnn.jpg" alt="RNN Neural Network">
+            <img src="{% static 'images/rnn.jpg' %}" alt="RNN Neural Network">
         </div>
         <div class="network">
             <h3>Generative Adversarial Networks (GAN)</h3>
@@ -123,7 +124,7 @@
                 workflows and enrich their products and services. According to research by the management consulting firm McKinsey, one third of organizations are already using generative AI regularly in at least one business function. Industry 
                 analyst Gartner projects more than 80% of organizations will have deployed generative AI applications or used generative AI application programming interfaces (APIs) by 2026.<br>
             </p>
-            <img src="/static/images/gan.jpg" alt="GAN Neural Network">
+            <img src="{% static 'images/gan.jpg' %}" alt="GAN Neural Network">
         </div>
     </section>
 
@@ -136,9 +137,8 @@
         <p>&copy; 2024 AI & Deep Learning. All Rights Reserved.</p>
     </footer>
 
-    <script src="/static/js/script.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
-
 
 
