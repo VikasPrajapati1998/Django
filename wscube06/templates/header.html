@@ -13,11 +13,12 @@
         <nav>
             <ul>
                 <li><a href="{% url 'homePage' %}">Home</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#present">Present</a></li>
-                <li><a href="#future">Future</a></li>
-                <li><a href="#types">Neural Networks</a></li>
+                <li><a href="{% url 'history' %}">History</a></li>
+                <li><a href="{% url 'present' %}">Present</a></li>
+                <li><a href="{% url 'future' %}">Future</a></li>
+                <li><a href="{% url 'neuralNetworks' %}">Neural Networks</a></li>
                 <li><a href="{% url 'aboutus' %}">About Us</a></li>
             </ul>
         </nav>
     </header>
+

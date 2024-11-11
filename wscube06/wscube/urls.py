@@ -24,6 +24,10 @@ urlpatterns = [
     path('aboutUs/', views.aboutUs),
     path('course/<int:course_id>', views.course), 
     path('aboutUsPage/', views.aboutUsPage, name="aboutus"),
+    path('history/', views.history, name="history"),
+    path('present/', views.present, name="present"),
+    path('future/', views.future, name="future"),
+    path('neuralNetworks', views.neuralNetworks, name="neuralNetworks"),
 ]
 
 
