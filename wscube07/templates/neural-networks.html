@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+    <section id="overview">
+        <h2>Overview of Neural Networks</h2>
+        <p>
+            Neural Networks are computational models inspired by the human brain. They consist of layers of interconnected nodes
+            (also called neurons) that process input data to produce outputs. Neural networks are widely used for tasks like pattern
+            recognition, image classification, natural language processing, and more. The architecture of a neural network involves
+            input, hidden, and output layers, where each layer transforms the data in specific ways.
+        </p>
+        <img src="/static/images/neural-networks-overview.png" alt="Neural Networks Overview">
+    </section>
+
+    <section id="cnn">
+        <h2>Convolutional Neural Networks (CNN)</h2>
+        <p>
+            CNNs are designed for processing structured grid data, like images. They are particularly effective in image recognition,
+            object detection, and visual tasks. CNNs use layers such as convolutional layers, pooling layers, and fully connected
+            layers to extract features from the input data.
+        </p>
+        <p>
+            Key applications of CNNs include facial recognition, self-driving cars, and medical image analysis. CNNs are highly
+            effective due to their ability to automatically detect features like edges, textures, and shapes in an image.
+        </p>
+        <img src="/static/images/cnn-flow.jpeg" alt="Convolutional Neural Network (CNN)">
+    </section>
+
+    <section id="rnn">
+        <h2>Recurrent Neural Networks (RNN)</h2>
+        <p>
+            RNNs are designed for sequential data, where the output from previous time steps is used as input for the next. This makes
+            RNNs particularly suitable for tasks like speech recognition, language modeling, and time series forecasting.
+        </p>
+        <p>
+            Unlike feed-forward networks, RNNs have feedback loops that allow them to maintain a memory of previous inputs. However,
+            traditional RNNs suffer from the vanishing gradient problem, which is mitigated in advanced variants like LSTMs (Long Short-Term Memory).
+        </p>
+        <img src="/static/images/rnn-flow.png" alt="Recurrent Neural Network (RNN)">
+    </section>
+
+    <section id="gan">
+        <h2>Generative Adversarial Networks (GAN)</h2>
+        <p>
+            GANs consist of two neural networks: a Generator and a Discriminator, which are trained simultaneously in a competitive
+            setting. The Generator creates fake data (like images), while the Discriminator tries to distinguish between real and fake
+            data. The goal is to improve the Generator so it can produce data that is indistinguishable from real data.
+        </p>
+        <p>
+            GANs have been used to generate realistic images, videos, and even artwork. They are also used for tasks like image
+            super-resolution, style transfer, and data augmentation.
+        </p>
+        <img src="/static/images/gan-flow.png" alt="Generative Adversarial Network (GAN)">
+    </section>
+
+{% endblock %}
