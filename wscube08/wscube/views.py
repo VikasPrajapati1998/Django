@@ -38,15 +38,16 @@ def course(request, course_id):
         message =  "DSA Programming"
     else:
         message = "No a course."
+    
     return HttpResponse(message)
-
 
 # render a html page.
 def home_page(request):
     return render (request, "index.html")
 
+
 def about_ai(request):
-    return render(request, 'about-ai.html')
+    return render(request, 'about-us.html')
 
 def history(request):
     return render(request, "history.html")
@@ -59,6 +60,5 @@ def future(request):
 
 def neural_networks(request):
     return render(request, "neural-networks.html")
-
 
 
