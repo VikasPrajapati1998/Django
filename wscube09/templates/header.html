@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence & Deep Learning</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Artificial Intelligence & Deep Learning</h1>
+        <nav>
+            <ul>
+                <!-- Method01 -->
+                <!-- {{ request.path }} -->
+                <li class="{% if request.path == '/' %} active {% endif %}"><a href="{% url 'home-page' %}">Home</a></li>
+                <li class="{% if request.path == '/history/' %} active {% endif %}"><a href="{% url 'history' %}">History</a></li>
+                <li class="{% if request.path == '/present/' %} active {% endif %}"><a href="{% url 'present' %}">Present</a></li>
+                <!-- Method02 -->
+                {% url 'future' as url %}
+                <li class="{% if request.path == url %} active {% endif %}"><a href="{% url 'future' %}">Future</a></li>
+                {% url 'neural-networks' as url %}
+                <li class="{% if request.path == url %} active {% endif %}"><a href="{{url}}">Neural Networks</a></li>
+                {% url 'about-ai' as url %}
+                <li class="{% if request.path == url %} active {% endif %}"><a href="{{url}}">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
