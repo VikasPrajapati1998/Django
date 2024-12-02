@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Home Section</h2>
+                <p>Welcome to the homepage of my awesome website. We offer great services and exciting content for you!</p>
+                <button onclick="showAlert()">Click Me</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a passionate team of web developers creating amazing user experiences.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                    <li>SEO Optimization</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" required></textarea><br><br>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
+

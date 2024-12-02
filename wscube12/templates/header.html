@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to Arjun Website</h1>
+            <nav>
+                <ul>
+                    {% url 'home' as url %}
+                    <li class="{% if request.path == url %} active {% endif %}"><a href="{{url}}">Home</a></li>
+                    {% url 'about' as url %}
+                    <li class="{% if request.path == url %} active {% endif %}"><a href="{{url}}">About</a></li>
+                    {% url 'service' as url %}
+                    <li class="{% if request.path == url %} active {% endif %}"><a href="{{url}}">Service</a></li>
+                    {% url 'contact' as url %}
+                    <li class="{% if request.path == url %} active {% endif %}"><a href="{{url}}">Contact</a></li>
+                    {% url 'userform' as url %}
+                    <li class="{% if request.path == url %} active {% endif %}"><a href="{{url}}">User Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    

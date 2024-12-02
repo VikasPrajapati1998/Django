@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="feature-area section-gap", id="form">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-8">
+                    <h1 class="mb-10">User Form</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form method="get">
+                    <div>
+                        <label for="">Value1: </label>
+                        <input type="text", name="num1", value="{{n1}}", class="form-control">
+                    </div>
+                    <div>
+                        <label for="">Value2: </label>
+                        <input type="text", name="num2", value="{{n2}}", class="form-control">
+                    </div>
+                    <div>
+                        <label for="">Result: </label>
+                        <input type="text", value="{{result}}", class="form-control">
+                    </div>
+                    <div>
+                        <button type="submit", class="pt-4">Save</button>
+                        <button type="reset", class="pt-4">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+
